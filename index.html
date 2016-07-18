@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JSX Transformer</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="//cdn.jsdelivr.net/behave.js/0.1/behave.js"></script>
+    <script>
+      var input = new Behave({
+        textarea: document.querySelector('textarea'),
+        replaceTab: true,
+        softTabs: true,
+        tabSize: 2,
+        autoOpen: true,
+        overwrite: true,
+        autoStrip: true,
+        autoIndent: true
+      });
+    </script>
+  </body>
+</html>

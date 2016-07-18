@@ -1,0 +1,10 @@
+{
+  "name": "jsxtransformer.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Dineshraj Goomany <dineshraj.goomany@gmail.com> (http://www.dineshraj.com)",
+}
