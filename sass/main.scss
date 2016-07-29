@@ -1,0 +1,109 @@
+@import 'breakpoints';
+
+body {
+  background-color: #f1f1f1;
+  margin: 10px;
+  font-family: helvetica, arial, sans-serif
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto
+}
+
+.header {
+  font-family: 'helvetica neue', 'helvetica', 'arial', sans-serif;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 0;
+  color: #545454;
+
+  &__title {
+    font-size: 10.8vw;
+    margin-top: 0;
+    letter-spacing: -2px;
+
+    @include bp('med') {
+      font-size: 80px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 5.7vw;
+
+    @include bp('med') {
+      margin-top: 0px;
+      font-size: 36px;
+    }
+  }
+}
+
+#app {
+  font-family: helvetica neue, helvetica, arial, sans-serif;
+
+  .jsx-transformer {
+    font-family: 'courier new', sans;
+
+    &__input, &__output {
+      font-size: 15px;
+      padding: 10px;
+      box-sizing: border-box;
+      width: 100%;
+
+      @include bp('large') {
+        width: 48.7%;
+        float: left;
+      }
+    }
+
+    &__input {
+      height: 330px;
+
+      @include bp('med') {
+        height: 500px;
+      }
+    }
+
+    &__output {
+      color: #131313;
+      background-color: white;
+      margin-top: 20px;
+      border: 1px solid green;
+
+      @include bp('large') {
+        margin-top: 0;
+        margin-left: 20px;
+      }
+
+      &.error {
+        border: 1px solid #c92f0d;
+        color: #c92f0d;
+      }
+    }
+  }
+}
+
+.credit {
+  text-align: center;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  color: #939393;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.credit:hover,
+.credit:active,
+.credit:focus {
+  text-decoration: underline;
+}
